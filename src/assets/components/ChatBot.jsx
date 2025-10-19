@@ -12,13 +12,13 @@ export default function ChatBot() {
       setMessage((prev) => [...prev, { sender: "user", text: message }]);
       user.current.value = "";
     }
-    fetch("http://localhost:3000/model", {
+    fetch("https://serverchatbotai-2.onrender.com/model", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ userMessage: message }),
-      credentials: "include",
+     
     })
       .then((res) => res.json())
       .then((data) =>
