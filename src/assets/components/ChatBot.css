@@ -1,0 +1,80 @@
+.icon-chatbot {
+  border: none;
+  background-color: white;
+  transition: 0.3s;
+}
+.icon-chatbot:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.fa-facebook-messenger {
+  font-size: 40px;
+  color: blue;
+}
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  margin-top: 50px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+}
+.chat-window > .btn-close {
+  padding: 5px 0;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  cursor: pointer;
+}
+.chat-window > .chat {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 0px 10px;
+  height: 340px;
+}
+.chat-window > .chat::-webkit-scrollbar {
+  display: none;
+}
+.chat > .user {
+  display: flex;
+  justify-content: end;
+}
+.chat > .user > p,
+.chat > .model > p {
+  width: 70%;
+  padding: 15px;
+  border-radius: 20px;
+}
+.chat > .user > p {
+  color: white;
+  background: blue;
+}
+.chat > .model > p {
+  background: gainsboro;
+}
+.chat-window > .input-area {
+  width: 85%;
+  margin: auto;
+}
+.input-area > input {
+  height: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.input-area > button {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  color: white;
+  background: blue;
+  border: none;
+  border-radius: 1000px;
+}
+.input-area > button > i {
+  margin-top: 5px;
+  font-size: 20px;
+}
