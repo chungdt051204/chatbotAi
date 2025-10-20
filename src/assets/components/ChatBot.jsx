@@ -58,7 +58,7 @@ export default function ChatBot() {
               id="user-message"
               type="text"
               ref={user}
-              placeholder="Nhập cái gì đó"
+              placeholder="Nhập bất cứ thứ gì"
             />
             <button id="btn-send" onClick={handleClick}>
               <i className="fa-solid fa-paper-plane"></i>
